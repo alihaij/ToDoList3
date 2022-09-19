@@ -50,7 +50,6 @@ showData();
 $('body').on('click', '.checkbox', function (e) {
     let taskId = (e.target.id);
     ListItems.forEach((element, index) => {
-
         if (element.id == taskId) {
             if ($(`#${taskId}`).is(':checked')) {
                 ListItems[index].checked = "checked";
